@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Josh's Calculator</title>
+        <meta name="description" content="Josh's Calculator.">
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div id="introBanner"><h3>Josh's Calculator</h3></div>
+        <div class="calculator">
+            <div class="calculator__display">0</div>
+            <div class="calculator__keys">
+                <div id="functions">
+                    <button class="functionIn" data-action="add">+</button>
+                    <button class="functionIn" data-action="subtract">-</button>
+                    <button class="functionIn" data-action="multiply">&times;</button>
+                    <button class="functionIn" data-action="divide">÷</button>
+                    <button class="equalBtn" data-action="calculate">=</button>
+                </div>
+                <div id="numberBtns">
+                    <button class="numberIn">7</button>
+                    <button class="numberIn">8</button>
+                    <button class="numberIn">9</button>
+                    <button class="numberIn">4</button>
+                    <button class="numberIn">5</button>
+                    <button class="numberIn">6</button>
+                    <button class="numberIn">1</button>
+                    <button class="numberIn">2</button>
+                    <button class="numberIn">3</button>
+                    <button class="numberIn">0</button>
+                    <button class="numberIn" data-action="decimal">.</button>
+                    <button class="numberIn" data-action="clear">AC</button>
+                </div>
+            </div>
+        </div>
+        <script src="jsCalc.js"></script>
+    </body>
+</html>

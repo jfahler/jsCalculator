@@ -1,0 +1,84 @@
+html, body {
+    height: 100%; 
+    margin: 0; 
+    background-color: beige;  
+}
+
+#introBanner {
+    font-family: 'Volkhov', serif;;
+    font-size: 2em;
+    text-align: center; 
+}
+
+.calculator {
+    margin: 0 auto;
+    margin-bottom: 3em;  
+    background-color: #2A3439;  
+    width: 500px; 
+    border-style: solid; 
+    border-radius: 2%; 
+    border-width: 5px; 
+    border-color: #0c0e0f; 
+    box-shadow:20px 20px 50px grey; 
+}
+
+.calculator__display {
+    text-align: right;
+    font-family: sans-serif; 
+    font-size: 1.5em;  
+    padding: 0.75em; 
+    border-radius: 3%; 
+    background: rgb(119,118,124);
+    background: linear-gradient(62deg, rgba(119,118,124,1) 0%, rgba(204,197,197,1) 49%, rgba(224,224,224,1) 100%); 
+    
+}
+
+#functions {
+    background: rgb(42,52,57);
+    text-align: center; 
+    padding: 1em; 
+}
+
+.functionIn {
+    padding: 1em; 
+    width: 15%; 
+    margin: 5px auto; 
+}
+
+#numberBtns{
+    background: rgb(42,52,57);
+    text-align: center;
+    padding: 1em; 
+}
+
+
+.numberIn {
+    padding: 1em; 
+    margin: 5px auto; 
+    width: 25%; 
+}
+
+button {
+    background-color: slategray; 
+    border: none; 
+    border-radius: 3%; 
+    border-bottom: 3px darkslategray solid; 
+    font-family: sans-serif; 
+    font-size: 1.2em; 
+    color: whitesmoke;  
+}
+
+button:active {
+    transform: translateY(2px); 
+    border-bottom: 1px black solid; 
+}
+
+.equalBtn {
+    background-color: rgb(253, 39, 39);  
+    text-align: center; 
+    padding: 1em; 
+}
+
+.is-depressed {
+    background-color: red; 
+}
