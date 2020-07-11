@@ -1,16 +1,17 @@
 html, body {
     height: 100%; 
     margin: 0; 
-    background-color: beige;  
+    background: linear-gradient(to right, #1d9c6c, #4f8a2d)
 }
 
 #introBanner {
     font-family: 'Volkhov', serif;;
     font-size: 2em;
     text-align: center; 
+    color: whitesmoke; 
 }
 
-.calculator {
+#calculator {
     margin: 0 auto;
     margin-bottom: 3em;  
     background-color: #2A3439;  
@@ -19,10 +20,10 @@ html, body {
     border-radius: 2%; 
     border-width: 5px; 
     border-color: #0c0e0f; 
-    box-shadow:20px 20px 50px grey; 
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.85); 
 }
 
-.calculator__display {
+#display {
     text-align: right;
     font-family: sans-serif; 
     font-size: 1.5em;  
@@ -68,6 +69,11 @@ button {
     color: whitesmoke;  
 }
 
+button:hover {
+    opacity: 90%; 
+
+}
+
 button:active {
     transform: translateY(2px); 
     border-bottom: 1px black solid; 
@@ -77,8 +83,4 @@ button:active {
     background-color: rgb(253, 39, 39);  
     text-align: center; 
     padding: 1em; 
-}
-
-.is-depressed {
-    background-color: red; 
 }
