@@ -8,30 +8,34 @@
         <link href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        <div id="introBanner"><h3>Josh's Calculator</h3></div>
-        <div id="calculator">
-            <div class = "display"></div>
+        <div class="introBanner"><h3>Josh's Calculator</h3></div>
+        <div class="calculator-grid">
+            <div class="output">
+                <div data-previous-operand class="previous-operand"></div>
+                <div data-current-operand class="current-operand"></div>
+              </div>
             <div id="keys">
                 <div id="functions">
-                    <button class="functionIn" onclick="operatorInput('+')">+</button>
-                    <button class="functionIn" onclick="operatorInput('-')">-</button>
-                    <button class="functionIn" onclick="operatorInput('*')">&times;</button>
-                    <button class="functionIn" onclick="operatorInput('/')">÷</button>
-                    <button class="equalBtn" data-action="calculate" onclick="calculate(firstNum, operator, secondNum)">=</button>
+                    <button class="functionIn" data-delete>DEL</button> 
+                    <button class="functionIn" data-operation>+</button>
+                    <button class="functionIn" data-operation>-</button>
+                    <button class="functionIn" data-operation>*</button>
+                    <button class="functionIn" data-operation>÷</button>
+                    <button class="equalBtn" data-equals>=</button>
                 </div>
                 <div id="numberBtns">
-                    <button class="numberIn" onclick="input('7')">7</button>
-                    <button class="numberIn" onclick="input('8')">8</button>
-                    <button class="numberIn" onclick="input('9')">9</button>
-                    <button class="numberIn" onclick="input('4')">4</button>
-                    <button class="numberIn" onclick="input('5')">5</button>
-                    <button class="numberIn" onclick="input('6')">6</button>
-                    <button class="numberIn" onclick="input('1')">1</button>
-                    <button class="numberIn" onclick="input('2')">2</button>
-                    <button class="numberIn" onclick="input('3')">3</button>
-                    <button class="numberIn" onclick="input('0')">0</button>
-                    <button class="numberIn" data-action="decimal">.</button>
-                    <button class="numberIn" data-action="clear">AC</button>
+                    <button class="numberIn" data-number>7</button>
+                    <button class="numberIn" data-number>8</button>
+                    <button class="numberIn" data-number>9</button>
+                    <button class="numberIn" data-number>4</button>
+                    <button class="numberIn" data-number>5</button>
+                    <button class="numberIn" data-number>6</button>
+                    <button class="numberIn" data-number>1</button>
+                    <button class="numberIn" data-number>2</button>
+                    <button class="numberIn" data-number>3</button>
+                    <button class="numberIn" data-number>0</button>
+                    <button class="numberIn" data-number>.</button>
+                    <button class="numberIn" data-all-clear>AC</button>
                 </div>
             </div>
         </div>
